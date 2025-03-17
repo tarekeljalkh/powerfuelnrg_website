@@ -1,24 +1,24 @@
 <section class="why-choose-two-section">
     <div class="container">
         <div class="thm-section-title text-center">
-            <h4 class="sub-title-shape-left section_title-subheading">Our Skills</h4>
-            <h2>We are Committed to <br> Continuous Improvement</h2>
+            <h4 class="sub-title-shape-left section_title-subheading">{{ $whyChooseUs->title }}</h4>
+            <h2>{{ $whyChooseUs->subtitle }}</h2>
         </div>
         <div class="row">
             <div class="col-xl-6">
                 <div class="why-choose-two-image">
-                    <img src="{{ asset('assets/images/resource/why-choose-2-img-1.jpg')}}" alt="">
+                    <img src="{{ asset($whyChooseUs->image) }}" alt="">
                 </div>
             </div>
             <div class="col-xl-6">
                 <div class="why-choose-right-content">
                     <div class="most-trusted-skill">
                         <div class="most-trusted-skill-icon">
-                            <span class="flaticon-badge"></span>
+                            <span class="{{ $whyChooseUs->icon }}"></span>
                         </div>
                         <div class="most-trusted-text">
-                            <h3>Most Trusted <br> & Certified Skills</h3>
-                            <p>Lorem ipsum dolor amet <br> consectetur adipisicing elit <br> sed eiusmod tempor.
+                            <h3>{{ $whyChooseUs->second_title }}</h3>
+                            <p>{{ $whyChooseUs->description }}
                             </p>
                         </div>
                     </div>
@@ -26,15 +26,15 @@
                         <!--Skill Box-->
                         <div class="progress-box">
                             <div class="inner count-box">
-                                <div class="text">Mechanical</div>
+                                <div class="text">{{ $whyChooseUs->skill_1 }}</div>
                                 <div class="bar">
                                     <div class="bar-innner">
                                         <div class="skill-percent">
                                             <span class="count-text" data-speed="3000"
-                                                data-stop="90">0</span>
+                                                data-stop="{{ $whyChooseUs->percentage_1 }}">0</span>
                                             <span class="percent">%</span>
                                         </div>
-                                        <div class="bar-fill" data-percent="90"></div>
+                                        <div class="bar-fill" data-percent="{{ $whyChooseUs->percentage_1 }}"></div>
                                     </div>
                                 </div>
                             </div>
@@ -42,15 +42,15 @@
                         <!--Skill Box-->
                         <div class="progress-box">
                             <div class="inner count-box">
-                                <div class="text">Agriculture</div>
+                                <div class="text">{{ $whyChooseUs->skill_2 }}</div>
                                 <div class="bar">
                                     <div class="bar-innner">
                                         <div class="skill-percent">
                                             <span class="count-text" data-speed="3000"
-                                                data-stop="80">0</span>
+                                                data-stop="{{ $whyChooseUs->percentage_2 }}">0</span>
                                             <span class="percent">%</span>
                                         </div>
-                                        <div class="bar-fill" data-percent="80"></div>
+                                        <div class="bar-fill" data-percent="{{ $whyChooseUs->percentage_2 }}"></div>
                                     </div>
                                 </div>
                             </div>
@@ -58,15 +58,15 @@
                         <!--Skill Box-->
                         <div class="progress-box">
                             <div class="inner count-box">
-                                <div class="text">Chemical</div>
+                                <div class="text">{{ $whyChooseUs->skill_3 }}</div>
                                 <div class="bar">
                                     <div class="bar-innner">
                                         <div class="skill-percent">
                                             <span class="count-text" data-speed="3000"
-                                                data-stop="85">0</span>
+                                                data-stop="{{ $whyChooseUs->percentage_3 }}">0</span>
                                             <span class="percent">%</span>
                                         </div>
-                                        <div class="bar-fill" data-percent="85"></div>
+                                        <div class="bar-fill" data-percent="{{ $whyChooseUs->percentage_3 }}"></div>
                                     </div>
                                 </div>
                             </div>

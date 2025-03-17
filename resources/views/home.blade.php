@@ -27,7 +27,7 @@
     <!--End Why Choose Two Section -->
 
     <!--Start video Two Section -->
-    @include('sections.video')
+    @include('sections.promobanner')
     <!--End video Two Section -->
 
     <!--Start Latest Projects One Section -->
@@ -38,11 +38,4 @@
     @include('sections.testimonials')
     <!--End Testimonials One Section -->
 
-    <!--Start Blog One Section -->
-    @include('sections.blog')
-    <!--End Blog One Section -->
-
-    <!--Start Brand One Section -->
-    @include('sections.brand')
-    <!--End Brand One Section -->
 @endsection

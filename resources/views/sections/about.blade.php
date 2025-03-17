@@ -1,4 +1,4 @@
-<section class="about-tow-section about-page">
+<section id="about" class="about-tow-section about-page">
     <div class="container">
         <div class="row">
             <div class="col-xl-6">

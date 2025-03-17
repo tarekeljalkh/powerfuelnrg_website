@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Hactora Factory HTML Template</title>
+    <title>PowerfuelNRG</title>
     <!-- Stylesheets -->
     <link href="{{ asset('assets/css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/magnific-popup.css') }}" rel="stylesheet">
@@ -47,7 +47,7 @@
                             <div class="header_top_inner clearfix">
                                 <div class="header_top_one_box pull-left">
                                     <ul>
-                                        <li><span class="flaticon-placeholder"></span>Flat 20, Reynolds USA</li>
+                                        <li><span class="flaticon-placeholder"></span>Dekwaneh, Lebanon</li>
                                         <li><span class="flaticon-phone-call-1"></span><a href="tel:8125553344">+812 555
                                                 33 44</a></li>
                                     </ul>
@@ -93,39 +93,10 @@
 
                                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                                     <ul class="navigation">
-                                                        <li class="dropdown current"><a href="index.html">Home</a>
-                                                            <ul>
-                                                                <li><a href="index.html">Home 01</a></li>
-                                                                <li><a href="index2.html">Home 02</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li><a href="about.html">About</a></li>
-                                                        <li class="dropdown"><a href="#">Pages</a>
-                                                            <ul>
-                                                                <li><a href="team.html">Team</a></li>
-                                                                <li><a href="testimonials.html">Testimonial</a></li>
-                                                                <li><a href="project.html">Project</a></li>
-                                                                <li><a href="project-details.html">Project Details</a>
-                                                                </li>
-                                                                <li><a href="faq.html">Faq</a></li>
-                                                                <li><a href="error.html">Error</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="dropdown"><a href="#"> Services</a>
-                                                            <ul>
-                                                                <li><a href="service.html"> Services</a></li>
-                                                                <li><a href="service-details.html"> Services Details</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="dropdown"><a href="#">Blog</a>
-                                                            <ul>
-                                                                <li><a href="blog.html">Blog Grid</a></li>
-                                                                <li><a href="blog-classic.html">Blog Classic</a></li>
-                                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li><a href="contact.html">Contact</a></li>
+                                                        <li><a href="#home">Home</a></li>
+                                                        <li><a href="#about">About</a></li>
+                                                        <li><a href="#services">Services</a></li>
+                                                        <li><a href="#footer">Contact</a></li>
                                                     </ul>
                                                 </div>
                                             </nav><!-- Main Menu End-->
@@ -209,6 +180,21 @@
     </div>
     <!--End pagewrapper-->
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a[href^='#']").on("click", function (event) {
+                event.preventDefault(); // Prevent default jump behavior
+
+                var target = $(this.getAttribute("href")); // Get section ID
+                if (target.length) {
+                    $("html, body").animate({
+                        scrollTop: target.offset().top - 80 // Adjust this value if needed
+                    }, 1000); // 1000ms (1 second) transition time
+                }
+            });
+        });
+    </script>
 
 
 
