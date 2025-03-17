@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-xl-6">
                 <div class="why-choose-two-image">
-                    <img src="{{ asset($whyChooseUs->image) }}" alt="">
+                    <img src="{{ asset('storage/' . $whyChooseUs->image) }}" alt="">
                 </div>
             </div>
             <div class="col-xl-6">

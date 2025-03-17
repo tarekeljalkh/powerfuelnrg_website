@@ -13,13 +13,13 @@
             <div class="col-xl-4">
                 <div class="latest-pro-one-single">
                     <div class="latest-pro-one-img-box">
-                        <img src="{{ asset($project->second_image) }}" alt="">
+                        <img src="{{ asset('storage/' . $project->second_image) }}" alt="">
                         <div class="latest-pro-one-img-title">
                             <div class="content">
                                 <h5><a href="#">Metal & Materials</a></h5>
                             </div>
                             <div class="icon"><a class="img-popup"
-                                    href="{{ asset($project->second_image) }}"><span
+                                    href="{{ asset('storage/' . $project->second_image) }}"><span
                                         class="flaticon-plus"></span></a></div>
                         </div>
                     </div>
@@ -28,13 +28,13 @@
             <div class="col-xl-4">
                 <div class="latest-pro-one-single">
                     <div class="latest-pro-one-img-box">
-                        <img src="{{ asset($project->third_image) }}" alt="">
+                        <img src="{{ asset('storage/' . $project->third_image) }}" alt="">
                         <div class="latest-pro-one-img-title">
                             <div class="content">
                                 <h5><a href="#">Welding Industry</a></h5>
                             </div>
                             <div class="icon"><a class="img-popup"
-                                    href="{{ asset($project->third_image) }}"><span
+                                    href="{{ asset('storage/' . $project->third_image) }}"><span
                                         class="flaticon-plus"></span></a></div>
                         </div>
                     </div>

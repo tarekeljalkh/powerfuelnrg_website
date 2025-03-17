@@ -15,7 +15,7 @@
                         <div class="testimonials-one-single">
                             <div class="client-info">
                                 <div class="client-img">
-                                    <img src="{{ asset($testimonial->client_image) }}" alt="">
+                                    <img src="{{ asset('storage/' . $testimonial->client_image) }}" alt="">
                                 </div>
                                 <div class="client-content">
                                     <h3>{{ $testimonial->client_name }}</h3>

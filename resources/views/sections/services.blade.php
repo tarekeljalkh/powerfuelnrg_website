@@ -10,7 +10,7 @@
                     <!--Main Service One Sec Single-->
                     <div class="main-service-one-sec-single wow fadeInUp" data-wow-delay="{{ ($key + 1) * 300 }}ms">
                         <div class="main-service-one-sec-img">
-                            <img src="{{ asset($service->image) }}" alt="{{ $service->title }}">
+                            <img src="{{ asset('storage/' . $service->image) }}" alt="{{ $service->title }}">
                         </div>
                         <div class="main-service-one-sec-content">
                             <div class="main-service-one-count">{{ sprintf('%02d', $key + 1) }}</div>
